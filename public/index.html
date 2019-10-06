@@ -31,6 +31,7 @@
 <body class="grey lighten-4">
 
 	<header>
+		<!-- Main menu -->
 		<nav class="navbar fixed-top navbar-expand-lg navbar-light white scrolling-navbar">
 			<div class="container-fluid">
 				<a href="#!" class="navbar-brand waves-effect"><img src="img/d_logo_mini.png" alt="Logo dashboard" class="img-fluid w-50"></a>
@@ -69,7 +70,9 @@
 				</div>
 			</div>
 		</nav>
+		<!-- /.Main menu -->
 
+		<!-- Sidebar -->
 		<div class="sidebar-fixed position-fixed">
 			<a href="#!" class="logo-wrapper waves-effect">
 				<img src="img/d_logo.png" alt="Logo" class="img-fluid">
@@ -83,9 +86,12 @@
 				<a href="#" class="list-group-item list-group-item-action waves-effect"><i class="fas fa-money-bill-alt mr-3"></i>Orders</a>
 			</div>
 		</div>
+		<!-- /.Sidebar -->
+
 	</header>
 
 	<main class="pt-5 mx-lg-5">
+		
 		<!-- Breadcrumbs & Search -->
 		<div class="container-fluid mt-5 pl-0 pr-0">
 			<div class="card mb-4 wow fadeIn">
@@ -103,31 +109,158 @@
 				</div>
 			</div>
 		</div>
+		<!-- /.Breadcrumbs & Search -->
 
 		<!-- Charts -->
 		<div class="row wow fadeIn">
 			
-			<!-- Bar -->
-			<div class="col-md-7 mb-4">
+			<div class="col-md-8 h-100 mb-4">
+				
+				<!-- Alert/Info -->
+				<div class="alert alert-success alert-dismissible fade show" role="alert">
+					<h4 class="alert-heading">Welcome to the Dashboard!</h4>
+					<p><strong>Lorem ipsum dolor</strong> sit amet consectetur adipisicing elit. Nesciunt quia, adipisci in unde sint veritatis eveniet dolorum? Fugiat ea culpa autem, dolores voluptas, eos, vitae eaque amet alias eum perferendis.</p>
+					<button type="button" class="close" data-dismiss="alert" aria-label="Close">
+						<span aria-hidden="true">&times;</span>
+					</button>
+				</div>
+				<!-- /.Alert/Info -->
+				
+				<!-- Bar -->
 				<div class="card">
+					<div class="card-header text-center">Votes</div>
 					<div class="card-body">
 						<canvas id="barChart"></canvas>
 					</div>
 				</div>
-			</div>
+				<!-- /.Bar -->
 
-			<!-- Pie -->
-			<div class="col-md-5 mb-4">
-				<div class="card">
-					<div class="card-header text-center">
-						Pie chart
-					</div>
+			</div>
+			
+			<div class="col-md-4 mb-4">
+				<!-- Pie -->
+				<div class="card mb-4">
+					<div class="card-header text-center">Pie chart</div>
 					<div class="card-body">
 						<canvas id="pieChart"></canvas>
 					</div>
 				</div>
+				<!-- /.Pie -->
+
+				<!-- List group -->
+				<div class="card mb-4">
+					<div class="card-header text-center">Monitoring</div>
+					<div class="card-body">
+						
+						<div class="list-group list-group-flush">
+							<a href="#!" class="list-group-item list-group-item-action waves-effect">Sales <span class="badge badge-success badge-pill pill-right">23% <i class="fa fa-arrow-up ml-1"></i></span></a>
+						</div>
+
+						<div class="list-group list-group-flush">
+							<a href="#!" class="list-group-item list-group-item-action waves-effect">Orders <span class="badge badge-danger badge-pill pill-right">12% <i class="fa fa-arrow-down ml-1"></i></span></a>
+						</div>
+
+						<div class="list-group list-group-flush">
+							<a href="#!" class="list-group-item list-group-item-action waves-effect">Views <span class="badge badge-info badge-pill pill-right">33 <i class="fas fa-eye ml-1"></i></span></a>
+						</div>
+
+						<div class="list-group list-group-flush">
+							<a href="#!" class="list-group-item list-group-item-action waves-effect">Visitors <span class="badge badge-warning badge-pill pill-right">17% <i class="fas fa-user ml-1"></i></span></a>
+						</div>
+
+						<div class="list-group list-group-flush">
+							<a href="#!" class="list-group-item list-group-item-action waves-effect">Comments <span class="badge badge-dark badge-pill pill-right">17 <i class="fas fa-comment ml-1"></i></span></a>
+						</div>
+
+					</div>
+				</div>
+				<!-- /.List group -->
+
 			</div>
+
+		</div>
+
+		<!-- Table -->
+		<div class="row wow fadeIn">
 			
+			<!-- Table #1 -->
+			<div class="col-md-6 mb-4">
+				<div class="card">
+					<div class="card-body">
+						<table class="table table-hover">
+							<thead class="blue-grey lighten-4">
+								<tr>
+									<th>#</th>
+									<th>Caption #1</th>
+									<th>Caption #2</th>
+									<th>Caption #3</th>
+								</tr>
+							</thead>
+							<tbody>
+								<tr>
+									<th scope="row">1</th>
+									<td>Item 1</td>
+									<td>Item 2</td>
+									<td>Item 3</td>
+								</tr>
+								<tr>
+									<th>2</th>
+									<td>Item 1</td>
+									<td>Item 2</td>
+									<td>Item 3</td>
+								</tr>
+								<tr>
+									<th>3</th>
+									<td>Item 1</td>
+									<td>Item 2</td>
+									<td>Item 3</td>
+								</tr>
+							</tbody>
+						</table>
+					</div>
+				</div>
+			</div>
+			<!-- /.Table #1 -->
+
+			<!-- Table #2 -->
+			<div class="col-md-6 mb-4">
+					<div class="card">
+						<div class="card-body">
+							<table class="table table-hover">
+								<thead class="blue lighten-4">
+									<tr>
+										<th>#</th>
+										<th>Caption #1</th>
+										<th>Caption #2</th>
+										<th>Caption #3</th>
+									</tr>
+								</thead>
+								<tbody>
+									<tr>
+										<th scope="row">1</th>
+										<td>Item 1</td>
+										<td>Item 2</td>
+										<td>Item 3</td>
+									</tr>
+									<tr>
+										<th>2</th>
+										<td>Item 1</td>
+										<td>Item 2</td>
+										<td>Item 3</td>
+									</tr>
+									<tr>
+										<th>3</th>
+										<td>Item 1</td>
+										<td>Item 2</td>
+										<td>Item 3</td>
+									</tr>
+								</tbody>
+							</table>
+						</div>
+					</div>
+				</div>
+				<!-- /.Table #2 -->
+
 		</div>
 
 	</main>
