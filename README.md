@@ -3,6 +3,7 @@
 ## About
 
 Шаблон административной панели на [MDBootstrap](https://mdbootstrap.com/).
+
 Онлайн DEMO: [MDBootstrap Dashboard](https://ma1ex.github.io/mdbootstrap-admin-panel/)
 
 ### Установка
